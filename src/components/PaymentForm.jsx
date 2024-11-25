@@ -12,16 +12,16 @@ const PaymentForm = () => {
   const sessions = [1, 10, "جلسة\nمجانية", 12];
 
   return (
-    <div className="mb-[42px] mt-[30px] py-[53px] px-[48px] bg-white mx-auto border border-[#9DCBDB] shadow-md rounded-md w-[80%]">
+    <div className="mb-[42px] mt-[30px] py-[53px] px-[48px] bg-white mx-auto border border-[#9DCBDB] shadow-md rounded-md w-[80%] max-sm:w-[95%]">
       {/* input and choose number of sessions */}
-      <div className="flex flex-wrap lg:flex-nowrap justify-center gap-8 lg:gap-[160px] mb-20">
+      <div className="flex flex-wrap xl:flex-nowrap justify-center gap-8 xl:gap-[160px] mb-20">
         {/* Choose Number of Sessions */}
-        <div className="w-full lg:w-[50%] max-lg:order-2">
-          <h3 className="text-right text-xl font-bold mb-4">
+        <div className="w-full xl:w-[50%] max-xl:order-2 max-xl:text-center">
+          <h3 className="2xl:text-right text-xl font-bold mb-4">
             اختر عدد الجلسات
           </h3>
           <div>
-            <ul className="flex flex-wrap xl:flex-nowrap justify-center lg:justify-start gap-4 lg:gap-[23.5px]">
+            <ul className="flex flex-wrap max-md:grid max-lg:grid-cols-2 lg:flex-nowrap justify-center xl:justify-start gap-4 lg:gap-[23.5px]">
               {sessions.map((num, index) => (
                 <li key={index}>
                   <button className="flex items-center justify-center">
@@ -33,7 +33,7 @@ const PaymentForm = () => {
           </div>
         </div>
         {/* client data */}
-        <div className="flex flex-col items-center justify-center w-full lg:w-[50%] max-lg:order-1">
+        <div className="flex flex-col items-center justify-center w-full lg:w-[50%] max-xl:order-1">
           {/* Form Title */}
           <h1 className="text-lg font-bold text-right w-full max-w-sm mb-4">
             ادخل بياناتك
